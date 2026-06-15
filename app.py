@@ -14,7 +14,7 @@ MODEL = "gemini-2.5-flash"
 
 base_llm = ChatGoogleGenerativeAI(
     model=MODEL,
-    google_api_key=st.secrects.get("GEMINI_API_KEY"),
+    google_api_key=st.secrets.get("GEMINI_API_KEY"),
     temperature=0.25
 )
 
